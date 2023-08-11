@@ -1,0 +1,35 @@
+import turtle
+import random
+
+turtle.speed(0)
+def tri(a):
+   for i in range(3):
+      turtle.forward(a)
+      turtle.right(120)
+
+def rect(b):
+   for i in range(4):
+      turtle.forward(b)
+      turtle.right(90)
+
+def circle(c):
+   turtle.circle(c)
+
+def go():
+   x=random.randint(-200,200)
+   y=random.randint(-200,200)
+   turtle.penup()
+   turtle.goto(x,y)
+   turtle.pendown()
+
+
+i=0
+x=random.randint
+while i<20:
+   tri(random.randint(10,120))
+   go()
+   rect(random.randint(10,120))
+   go()
+   circle(random.randint(10,120))
+   go()
+   i=i+1
